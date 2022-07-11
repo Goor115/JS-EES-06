@@ -2,11 +2,11 @@ function Rect(width, height) {
     this.width = width;
     this.height = height;
 
-    this.getArea = function () {
+    Rect.prototype.getArea = function () {
         return this.height * this.width;
     }
 
-    this.getPerimeter = function () {
+    Rect.prototype.getPerimeter = function () {
         return this.height * 2 + this.width * 2;
     }
 }
